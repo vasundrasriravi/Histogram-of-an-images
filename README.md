@@ -30,6 +30,7 @@ The Histogram of gray scale image and color image is shown.
 # Register Number:212222230168
 ```
 ### Input Grayscale Image and Color Image :
+```
 import cv2
 import matplotlib.pyplot as plt
 gray_image = cv2.imread("gray image.jpg")
@@ -38,8 +39,9 @@ cv2.imshow("Gray Image",gray_image)
 cv2.imshow("Colour Image",color_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
+```
 ### Histogram of Grayscale Image and any channel of Color Image:
+```
 import numpy as np
 import cv2
 Gray_image = cv2.imread("gray image.jpg")
@@ -63,8 +65,9 @@ plt.ylabel("Pixel Count")
 plt.stem(color_hist)
 plt.show()
 cv2.waitKey(0)
-
+```
 ### Histogram Equalization of Grayscale Image:
+```
 import cv2
 gray_image = cv2.imread("gray image.jpg",0)
 cv2.imshow('Grey Scale Image',gray_image)
@@ -72,7 +75,7 @@ equ = cv2.equalizeHist(gray_image)
 cv2.imshow("Equalized Image",equ)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
+```
 ## Output:
 ### Input Grayscale Image and Color Image
 ![Screenshot 2024-03-06 195241](https://github.com/vasundrasriravi/Histogram-of-an-images/assets/119393983/bd53d265-fdbf-4f1d-aea7-4055bce6c0b9)
